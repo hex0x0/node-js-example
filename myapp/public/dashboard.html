@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  
+    <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8aa3fdea0.js" crossorigin="anonymous"></script>
+    
+    <title>dashboard</title>
+</head>
+<body>
+    <section class="all-content">
+        <nav class="navbar navbar-expand-sm bg-light p-0">
+            <div class="nav-brand">
+                <img src="../public/images/remove.png" width="50%">
+            </div>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="#" class="nav-link active">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="" class="nav-link active">Posts</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a href="categorias.html" class="nav-link">Categorias</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a href="usuarios.html" class="nav-link active">Usuários</a>
+                    </li>
+
+                </ul>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropwdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#menu-drop">
+                            <i class="fas fa-user"></i> Olá, usuário
+                        </a>
+
+
+                        <div class="dropdown-menu" id="menu-drop">
+                            <a href="perfis.html" class="dropdown-item">
+                                <i class="fas fa-user-circle"></i> Perfil
+                            </a>
+                        </div>
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> Logout
+                        </a>
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </nav>
+    </section>
+
+    <section id="actions" class="py-5 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addPostModal">
+                        <i class="fas fa-plus"></i> Adicionar postagem
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addCategoryModal">
+                        <i class="fas fa-plus"></i> Criar categoria
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#addUserModal">
+                        <i class="fas fa-plus"></i> Incluir usuário
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Últimos posts</h4>
+                    </div>
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Título</th>
+                                <th>Categoria</th>
+                                <th>Data</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Primeiro post</td>
+                                    <td>Lorem ipsum, dolor sit amet consectetur</td>
+                                    <td>December 15 2019</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Segundo post</td>
+                                    <td>Lorem ipsum, dolor sit amet consectetur</td>
+                                    <td>December 15 2019</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Terceiro post</td>
+                                    <td>Lorem ipsum, dolor sit amet consectetur</td>
+                                    <td>December 15 2019</td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center bg-primary text-white mb-3">
+                    <div class="card-body">
+                        <h3>Posts</h3>
+                        <h4 class="display-4">
+                            <i class="fas fa-pencil-alt"></i> 6
+                        </h4>
+                        <a href="posts.html" class="btn btn-outline-light btn-sm">Ver posts</a>
+                    </div>
+                </div>
+
+                <div class="card text-center bg-success text-white mb-3">
+                    <div class="card-body">
+                        <h3>Categorias</h3>
+                        <h4 class="display-4">
+                            <i class="fas fa-folder"></i> 4
+                        </h4>
+                        <a href="categories.html" class="btn btn-outline-light btn-sm">Ver categorias</a>
+                    </div>
+                </div>
+
+                <div class="card text-center bg-warning text-white mb-3">
+                    <div class="card-body">
+                        <h3>Usuários</h3>
+                        <h4 class="display-4">
+                            <i class="fas fa-users"></i> 7
+                        </h4>
+                        <a href="users.html" class="btn btn-outline-light btn-sm">Ver usuários</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    
+</body>
+<script src="../public/javascripts/jquery-3.6.0.min.js"></script>
+<script src="../public/javascripts/popper.min.js"></script>
+<script type="text/javascript" src="../public/javascripts/bootstrap.js"></script>
+</html>
